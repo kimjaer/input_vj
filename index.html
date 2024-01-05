@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="" name="memberfm" onsubmit="return false;">
+    <input type="text" name="nm" id="nm" value="">
+    <label for="nm">성명</label>
+    <span>한글로만 출력해주세요</span>
+    <button type="button" onclick="onsubmits()">전송</button>
+  </form>
+
+
+  <script>
+    function onsubmits() {
+      alert(memberfm.nm.value)
+    }
+  </script>
+</body>
+
+  <!-- <script>  
+      //console.log(typeof nm, nm) // body 밑에 써준다
+      //console.log(Array.isArray(nm)) // → 어레이? → 아니(false)
+      console.log(
+        typeof memberfm,
+        memberfm,
+        Array.isArray(memberfm),
+        memberfm.nm,
+        memberfm.nm.value) // 무슨 타입인지, 어레이인지 다 나옴
+
+        // input에 성명을 쓰고 버튼을 클릭하면 경고창으로 이름이 보이도록 처리
+        function onsubmit(e){
+          alert('성명: ' + nameValue);
+        }
+  </script>  -->
+</body>
+</html>
